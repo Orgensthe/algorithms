@@ -1,5 +1,4 @@
 
-
 def solution():
 
     suger =  int(input())
