@@ -1,4 +1,4 @@
-a,b,c= raw_input().split(" ");
+a,b,c= raw_input().split(" ")
 
 a = int(a)
 b = int(b)
