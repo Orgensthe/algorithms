@@ -16,6 +16,7 @@ def solution():
     result = 0
     for i in range(word_count):
         word = raw_input()
+        print(sorted(word,key=word.find))
         if check_group_work(word) == True:
             result+=1
     print(result)
