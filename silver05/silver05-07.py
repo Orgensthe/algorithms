@@ -10,9 +10,6 @@ def solution():
     count['9']  = num_of_6_and_9
 
     max_key = count.most_common(1)
-
-
-
     print(max_key[0][1])
 
 
