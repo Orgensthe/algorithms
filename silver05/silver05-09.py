@@ -14,3 +14,7 @@ def solution():
         print(word)
 
 solution()
+
+
+bosh alias-env bosh -e 130.0.0.73 --ca-cert <(bosh int creds.yml --path /director_ssl/ca)
+Using environment '192.168.1.214' as client 'admin'
