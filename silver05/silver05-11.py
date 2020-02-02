@@ -6,7 +6,7 @@ def solution():
         x , y =  str(input()).split(" ")
         position.append((x,y))
 
-
+    
     position= sorted(position,key=lambda x:(x[0],x[1] ))
    
     for p in position:
