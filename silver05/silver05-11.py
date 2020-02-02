@@ -1,15 +1,14 @@
 
 def solution():
 
-    position  = []
+    coord_list  = []
     for i in range(int(input())):
-        x , y =  str(input()).split(" ")
-        position.append((x,y))
+        coord_list.append(list(map(int, input().split())))
 
     
-    position= sorted(position,key=lambda x:(x[0],x[1] ))
+    coord_list= sorted(coord_list,key=lambda x:(x[0],x[1] ))
    
-    for p in position:
-        print(p[0]+" "+p[1])
+    for p in coord_list:
+        print(p[0],p[1])
 
 solution()
