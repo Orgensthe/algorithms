@@ -19,7 +19,6 @@ def check_board(start_value,len_of_col,index_of_start,board):
     count = 0
     start = start_value
 
-    
     for i in range(8):
         for j in  range(8):
             if j%8 != 7:
@@ -42,11 +41,9 @@ for i in range(len_of_col-7):
     
     for j in range(len_of_row-7):
         
-        temp_min_of_zero = check_board(True,len_of_col,(j*8+i),board)
-        temp_min_of_one = check_board(False,len_of_col,(j*8+i),board)
+        temp_min_of_zero = check_board(True,len_of_col,(j*len_of_col+i),board)
+        temp_min_of_one = check_board(False,len_of_col,(j*len_of_col+i),board)
         temp_min = temp_min_of_zero if temp_min_of_zero<temp_min_of_one else temp_min_of_one 
     
         min_change = temp_min if temp_min < min_change else min_change
-        if min_change == 11:
-            print(i,j)
 print(min_change)
