@@ -1,11 +1,20 @@
 import sys
+def solution():
+    num = sys.stdin.readline().strip()
+    sum = 0
+    for n in num:
+        sum += int(n)
 
-num = sys.stdin.readline().strip()
+    if sum %3 != 0 or not("0" in num):
+        print(-1)
+        return
+   
+    num = sorted(num,key=lambda x: -(int(x)))
 
+    result = "".join(num)
+    print(result)
 
-if not ("0" in num):
-    print(-1)
-
- 
+solution()
+    
 
 
