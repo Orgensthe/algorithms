@@ -8,8 +8,6 @@ for i in range ( int(sys.stdin.readline().strip())):
 area = [ [[1] for j in range(100)] for i in range(100)]
 
 
-
-
 for  num in num_list:
     for i in range(num[0],num[0]+10):
         for j in range(num[1],num[1]+10):
