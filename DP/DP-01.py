@@ -4,7 +4,6 @@ num = int(sys.stdin.readline().strip())
 
 list_ = [0 for i in range(num+1)]
 
-
 def min(x,y):
     return x if x >= y else y
 
