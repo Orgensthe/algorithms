@@ -1,12 +1,20 @@
 import sys
 
+
 num = int(sys.stdin.readline().strip())
 
+num_list = [0 for i in range(num+2)]
 
-def solution(target,n_1,n_2,num):
+def solution(target):
 
-    if  target-1 == n_1:
-        return n_1+n_2
-    else:
+    for i in range(target+1):
+        if i <= 2:
+            num_list[i] = i
+        else:
+            num_list[i] = num_list[i-1]+num_list[i-2]
 
-print(solution(num,1,2,1)%10007)
+
+
+    return num_list[target]
+
+print(solution(num)%10007)
