@@ -13,8 +13,7 @@ def solution(target):
         else:
             num_list[i] = num_list[i-1]+num_list[i-2]
 
-
-
     return num_list[target]
 
 print(solution(num)%10007)
+
