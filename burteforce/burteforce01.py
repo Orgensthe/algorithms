@@ -1,5 +1,4 @@
 import sys
-import itertools
 
 def solution():
     num_list = []
