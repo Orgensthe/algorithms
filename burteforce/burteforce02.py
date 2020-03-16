@@ -10,11 +10,10 @@ def solution():
         before_col_max = 1
 
         for i in range(len(list_)):
+            currnet_col_max = 1
+            currnet_row_max = 1
             for j in range(len(list_)-1):
                 if list_[i][j]==list_[i][j+1]:
-                    if currnet_row_max == 4:
-                        print(list_[i][j],list_[i][j+1])
-                        print(list_)
                     currnet_row_max+=1
                 elif list_[i][j] !=list_[i][j+1] :
                     before_row_max = currnet_row_max if currnet_row_max>before_row_max else before_row_max
@@ -29,15 +28,10 @@ def solution():
 
         return max([currnet_row_max,before_row_max,currnet_col_max,before_col_max])
                 
-
-
-
-
     candy_list = []
     candy_count  =  int(input())
     candy_list = [[] for x in range(candy_count)]
     max_= 1
-
 
     for i in range(candy_count) :
         for ch in sys.stdin.readline().strip():
