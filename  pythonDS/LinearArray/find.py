@@ -9,3 +9,5 @@ def solution(L, x):
         answer.append(-1)
 
     return answer
+
+    
