@@ -1,9 +1,7 @@
 import sys
 
 num = sys.stdin.readline()
-
 socks = list(map(int, sys.stdin.readline().strip().split(" ")))
-
 dic = dict()
 for sock in socks:
     try:
